@@ -1,0 +1,2 @@
+/usr/bin/ar qc ../../lib/libextract_point_cloud.a CMakeFiles/extract_point_cloud_a.dir/extract_point_cloud.cpp.o
+/usr/bin/ranlib ../../lib/libextract_point_cloud.a
