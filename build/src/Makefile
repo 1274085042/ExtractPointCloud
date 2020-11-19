@@ -67,10 +67,10 @@ RM = /usr/local/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/lfq/PointCloud/extract_point_cloud
+CMAKE_SOURCE_DIR = /home/lfq/PointCloud/Extract_Point_Cloud
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/lfq/PointCloud/extract_point_cloud/build
+CMAKE_BINARY_DIR = /home/lfq/PointCloud/Extract_Point_Cloud/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -99,14 +99,14 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/lfq/PointCloud/extract_point_cloud/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/lfq/PointCloud/extract_point_cloud/build/CMakeFiles /home/lfq/PointCloud/extract_point_cloud/build/src//CMakeFiles/progress.marks
-	cd /home/lfq/PointCloud/extract_point_cloud/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/lfq/PointCloud/extract_point_cloud/build/CMakeFiles 0
+	cd /home/lfq/PointCloud/Extract_Point_Cloud/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/lfq/PointCloud/Extract_Point_Cloud/build/CMakeFiles /home/lfq/PointCloud/Extract_Point_Cloud/build/src//CMakeFiles/progress.marks
+	cd /home/lfq/PointCloud/Extract_Point_Cloud/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/lfq/PointCloud/Extract_Point_Cloud/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/lfq/PointCloud/extract_point_cloud/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/clean
+	cd /home/lfq/PointCloud/Extract_Point_Cloud/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/clean
 .PHONY : clean
 
 # The main clean target
@@ -116,63 +116,48 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/lfq/PointCloud/extract_point_cloud/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/preinstall
+	cd /home/lfq/PointCloud/Extract_Point_Cloud/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/lfq/PointCloud/extract_point_cloud/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/preinstall
+	cd /home/lfq/PointCloud/Extract_Point_Cloud/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/lfq/PointCloud/extract_point_cloud/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/lfq/PointCloud/Extract_Point_Cloud/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
-src/CMakeFiles/extract_point_cloud_so.dir/rule:
-	cd /home/lfq/PointCloud/extract_point_cloud/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/CMakeFiles/extract_point_cloud_so.dir/rule
-.PHONY : src/CMakeFiles/extract_point_cloud_so.dir/rule
+src/CMakeFiles/extract_point_cloud.dir/rule:
+	cd /home/lfq/PointCloud/Extract_Point_Cloud/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/CMakeFiles/extract_point_cloud.dir/rule
+.PHONY : src/CMakeFiles/extract_point_cloud.dir/rule
 
 # Convenience name for target.
-extract_point_cloud_so: src/CMakeFiles/extract_point_cloud_so.dir/rule
+extract_point_cloud: src/CMakeFiles/extract_point_cloud.dir/rule
 
-.PHONY : extract_point_cloud_so
+.PHONY : extract_point_cloud
 
 # fast build rule for target.
-extract_point_cloud_so/fast:
-	cd /home/lfq/PointCloud/extract_point_cloud/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/extract_point_cloud_so.dir/build.make src/CMakeFiles/extract_point_cloud_so.dir/build
-.PHONY : extract_point_cloud_so/fast
+extract_point_cloud/fast:
+	cd /home/lfq/PointCloud/Extract_Point_Cloud/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/extract_point_cloud.dir/build.make src/CMakeFiles/extract_point_cloud.dir/build
+.PHONY : extract_point_cloud/fast
 
 # Convenience name for target.
-src/CMakeFiles/extract_point_cloud_a.dir/rule:
-	cd /home/lfq/PointCloud/extract_point_cloud/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/CMakeFiles/extract_point_cloud_a.dir/rule
-.PHONY : src/CMakeFiles/extract_point_cloud_a.dir/rule
+src/CMakeFiles/main.dir/rule:
+	cd /home/lfq/PointCloud/Extract_Point_Cloud/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/CMakeFiles/main.dir/rule
+.PHONY : src/CMakeFiles/main.dir/rule
 
 # Convenience name for target.
-extract_point_cloud_a: src/CMakeFiles/extract_point_cloud_a.dir/rule
+main: src/CMakeFiles/main.dir/rule
 
-.PHONY : extract_point_cloud_a
+.PHONY : main
 
 # fast build rule for target.
-extract_point_cloud_a/fast:
-	cd /home/lfq/PointCloud/extract_point_cloud/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/extract_point_cloud_a.dir/build.make src/CMakeFiles/extract_point_cloud_a.dir/build
-.PHONY : extract_point_cloud_a/fast
-
-# Convenience name for target.
-src/CMakeFiles/test.dir/rule:
-	cd /home/lfq/PointCloud/extract_point_cloud/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/CMakeFiles/test.dir/rule
-.PHONY : src/CMakeFiles/test.dir/rule
-
-# Convenience name for target.
-test: src/CMakeFiles/test.dir/rule
-
-.PHONY : test
-
-# fast build rule for target.
-test/fast:
-	cd /home/lfq/PointCloud/extract_point_cloud/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/test.dir/build.make src/CMakeFiles/test.dir/build
-.PHONY : test/fast
+main/fast:
+	cd /home/lfq/PointCloud/Extract_Point_Cloud/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/build
+.PHONY : main/fast
 
 extract_point_cloud.o: extract_point_cloud.cpp.o
 
@@ -180,8 +165,7 @@ extract_point_cloud.o: extract_point_cloud.cpp.o
 
 # target to build an object file
 extract_point_cloud.cpp.o:
-	cd /home/lfq/PointCloud/extract_point_cloud/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/extract_point_cloud_so.dir/build.make src/CMakeFiles/extract_point_cloud_so.dir/extract_point_cloud.cpp.o
-	cd /home/lfq/PointCloud/extract_point_cloud/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/extract_point_cloud_a.dir/build.make src/CMakeFiles/extract_point_cloud_a.dir/extract_point_cloud.cpp.o
+	cd /home/lfq/PointCloud/Extract_Point_Cloud/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/extract_point_cloud.dir/build.make src/CMakeFiles/extract_point_cloud.dir/extract_point_cloud.cpp.o
 .PHONY : extract_point_cloud.cpp.o
 
 extract_point_cloud.i: extract_point_cloud.cpp.i
@@ -190,8 +174,7 @@ extract_point_cloud.i: extract_point_cloud.cpp.i
 
 # target to preprocess a source file
 extract_point_cloud.cpp.i:
-	cd /home/lfq/PointCloud/extract_point_cloud/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/extract_point_cloud_so.dir/build.make src/CMakeFiles/extract_point_cloud_so.dir/extract_point_cloud.cpp.i
-	cd /home/lfq/PointCloud/extract_point_cloud/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/extract_point_cloud_a.dir/build.make src/CMakeFiles/extract_point_cloud_a.dir/extract_point_cloud.cpp.i
+	cd /home/lfq/PointCloud/Extract_Point_Cloud/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/extract_point_cloud.dir/build.make src/CMakeFiles/extract_point_cloud.dir/extract_point_cloud.cpp.i
 .PHONY : extract_point_cloud.cpp.i
 
 extract_point_cloud.s: extract_point_cloud.cpp.s
@@ -200,36 +183,35 @@ extract_point_cloud.s: extract_point_cloud.cpp.s
 
 # target to generate assembly for a file
 extract_point_cloud.cpp.s:
-	cd /home/lfq/PointCloud/extract_point_cloud/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/extract_point_cloud_so.dir/build.make src/CMakeFiles/extract_point_cloud_so.dir/extract_point_cloud.cpp.s
-	cd /home/lfq/PointCloud/extract_point_cloud/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/extract_point_cloud_a.dir/build.make src/CMakeFiles/extract_point_cloud_a.dir/extract_point_cloud.cpp.s
+	cd /home/lfq/PointCloud/Extract_Point_Cloud/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/extract_point_cloud.dir/build.make src/CMakeFiles/extract_point_cloud.dir/extract_point_cloud.cpp.s
 .PHONY : extract_point_cloud.cpp.s
 
-test.o: test.cpp.o
+main.o: main.cpp.o
 
-.PHONY : test.o
+.PHONY : main.o
 
 # target to build an object file
-test.cpp.o:
-	cd /home/lfq/PointCloud/extract_point_cloud/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/test.dir/build.make src/CMakeFiles/test.dir/test.cpp.o
-.PHONY : test.cpp.o
+main.cpp.o:
+	cd /home/lfq/PointCloud/Extract_Point_Cloud/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/main.cpp.o
+.PHONY : main.cpp.o
 
-test.i: test.cpp.i
+main.i: main.cpp.i
 
-.PHONY : test.i
+.PHONY : main.i
 
 # target to preprocess a source file
-test.cpp.i:
-	cd /home/lfq/PointCloud/extract_point_cloud/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/test.dir/build.make src/CMakeFiles/test.dir/test.cpp.i
-.PHONY : test.cpp.i
+main.cpp.i:
+	cd /home/lfq/PointCloud/Extract_Point_Cloud/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/main.cpp.i
+.PHONY : main.cpp.i
 
-test.s: test.cpp.s
+main.s: main.cpp.s
 
-.PHONY : test.s
+.PHONY : main.s
 
 # target to generate assembly for a file
-test.cpp.s:
-	cd /home/lfq/PointCloud/extract_point_cloud/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/test.dir/build.make src/CMakeFiles/test.dir/test.cpp.s
-.PHONY : test.cpp.s
+main.cpp.s:
+	cd /home/lfq/PointCloud/Extract_Point_Cloud/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/main.cpp.s
+.PHONY : main.cpp.s
 
 # Help Target
 help:
@@ -239,15 +221,14 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
-	@echo "... extract_point_cloud_a"
-	@echo "... extract_point_cloud_so"
-	@echo "... test"
+	@echo "... extract_point_cloud"
+	@echo "... main"
 	@echo "... extract_point_cloud.o"
 	@echo "... extract_point_cloud.i"
 	@echo "... extract_point_cloud.s"
-	@echo "... test.o"
-	@echo "... test.i"
-	@echo "... test.s"
+	@echo "... main.o"
+	@echo "... main.i"
+	@echo "... main.s"
 .PHONY : help
 
 
@@ -259,6 +240,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/lfq/PointCloud/extract_point_cloud/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/lfq/PointCloud/Extract_Point_Cloud/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

@@ -67,10 +67,10 @@ RM = /usr/local/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/lfq/PointCloud/extract_point_cloud
+CMAKE_SOURCE_DIR = /home/lfq/PointCloud/Extract_Point_Cloud
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/lfq/PointCloud/extract_point_cloud/build
+CMAKE_BINARY_DIR = /home/lfq/PointCloud/Extract_Point_Cloud/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -99,9 +99,9 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/lfq/PointCloud/extract_point_cloud/build/CMakeFiles /home/lfq/PointCloud/extract_point_cloud/build//CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/lfq/PointCloud/Extract_Point_Cloud/build/CMakeFiles /home/lfq/PointCloud/Extract_Point_Cloud/build//CMakeFiles/progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/lfq/PointCloud/extract_point_cloud/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/lfq/PointCloud/Extract_Point_Cloud/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -130,43 +130,30 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named extract_point_cloud_so
+# Target rules for targets named extract_point_cloud
 
 # Build rule for target.
-extract_point_cloud_so: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 extract_point_cloud_so
-.PHONY : extract_point_cloud_so
+extract_point_cloud: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 extract_point_cloud
+.PHONY : extract_point_cloud
 
 # fast build rule for target.
-extract_point_cloud_so/fast:
-	$(MAKE) $(MAKESILENT) -f src/CMakeFiles/extract_point_cloud_so.dir/build.make src/CMakeFiles/extract_point_cloud_so.dir/build
-.PHONY : extract_point_cloud_so/fast
+extract_point_cloud/fast:
+	$(MAKE) $(MAKESILENT) -f src/CMakeFiles/extract_point_cloud.dir/build.make src/CMakeFiles/extract_point_cloud.dir/build
+.PHONY : extract_point_cloud/fast
 
 #=============================================================================
-# Target rules for targets named extract_point_cloud_a
+# Target rules for targets named main
 
 # Build rule for target.
-extract_point_cloud_a: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 extract_point_cloud_a
-.PHONY : extract_point_cloud_a
+main: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 main
+.PHONY : main
 
 # fast build rule for target.
-extract_point_cloud_a/fast:
-	$(MAKE) $(MAKESILENT) -f src/CMakeFiles/extract_point_cloud_a.dir/build.make src/CMakeFiles/extract_point_cloud_a.dir/build
-.PHONY : extract_point_cloud_a/fast
-
-#=============================================================================
-# Target rules for targets named test
-
-# Build rule for target.
-test: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test
-.PHONY : test
-
-# fast build rule for target.
-test/fast:
-	$(MAKE) $(MAKESILENT) -f src/CMakeFiles/test.dir/build.make src/CMakeFiles/test.dir/build
-.PHONY : test/fast
+main/fast:
+	$(MAKE) $(MAKESILENT) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/build
+.PHONY : main/fast
 
 # Help Target
 help:
@@ -176,9 +163,8 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
-	@echo "... extract_point_cloud_a"
-	@echo "... extract_point_cloud_so"
-	@echo "... test"
+	@echo "... extract_point_cloud"
+	@echo "... main"
 .PHONY : help
 
 

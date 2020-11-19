@@ -247,7 +247,6 @@ set(CMAKE_MAKEFILE_PRODUCTS
 
 # Dependency information for all targets:
 set(CMAKE_DEPEND_INFO_FILES
-  "src/CMakeFiles/extract_point_cloud_so.dir/DependInfo.cmake"
-  "src/CMakeFiles/extract_point_cloud_a.dir/DependInfo.cmake"
-  "src/CMakeFiles/test.dir/DependInfo.cmake"
+  "src/CMakeFiles/extract_point_cloud.dir/DependInfo.cmake"
+  "src/CMakeFiles/main.dir/DependInfo.cmake"
   )

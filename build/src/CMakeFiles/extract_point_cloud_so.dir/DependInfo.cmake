@@ -4,20 +4,15 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/home/lfq/PointCloud/extract_point_cloud/src/extract_point_cloud.cpp" "/home/lfq/PointCloud/extract_point_cloud/build/src/CMakeFiles/extract_point_cloud_so.dir/extract_point_cloud.cpp.o"
+  "/home/lfq/PointCloud/Extract_Point_Cloud/src/extract_point_cloud.cpp" "/home/lfq/PointCloud/Extract_Point_Cloud/build/src/CMakeFiles/extract_point_cloud_so.dir/extract_point_cloud.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 
 # Preprocessor definitions for this target.
 set(CMAKE_TARGET_DEFINITIONS_CXX
-  "DISABLE_OPENNI2"
   "DISABLE_PCAP"
   "DISABLE_PNG"
-  "EIGEN_USE_NEW_STDVECTOR"
-  "EIGEN_YES_I_KNOW_SPARSE_MODULE_IS_NOT_STABLE_YET"
-  "FLANN_STATIC"
   "extract_point_cloud_so_EXPORTS"
-  "qh_QHpointer"
   "vtkFiltersFlowPaths_AUTOINIT=1(vtkFiltersParallelFlowPaths)"
   "vtkIOExodus_AUTOINIT=1(vtkIOParallelExodus)"
   "vtkIOGeometry_AUTOINIT=1(vtkIOMPIParallel)"
@@ -41,13 +36,14 @@ set(CMAKE_CXX_TARGET_INCLUDE_PATH
   "/usr/lib/openmpi/include"
   "/usr/lib/openmpi/include/openmpi"
   "/usr/include/python2.7"
-  "/usr/include/hdf5/serial"
+  "/usr/include/hdf5/openmpi"
   "/usr/include/libxml2"
   "/usr/include/tcl"
   "../include"
   "/usr/include/pcl-1.7"
-  "/usr/include/eigen3"
+  "/usr/local/include/eigen3"
   "/usr/include/ni"
+  "/usr/include/openni2"
   )
 
 # Targets to which this target links.
